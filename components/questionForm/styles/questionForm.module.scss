@@ -1,0 +1,10 @@
+@import "styles/colors.scss";
+.btn-group {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 1.5rem;
+    gap: 1rem;
+    .text {
+        color: $primary;
+    }
+}
