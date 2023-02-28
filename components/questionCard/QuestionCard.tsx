@@ -60,7 +60,11 @@ const QuestionCard: React.FC<Props> = ({isShowDetail = false, question}) => {
                     !isShowDetail && styles["clip"]
                 }`}
             >
-                {question?.description}
+                {isShowDetail ? (
+                    <pre dir="auto">{question?.description}</pre>
+                ) : (
+                    question?.description
+                )}
             </div>
 
             {!isShowDetail && (
