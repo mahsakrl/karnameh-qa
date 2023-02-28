@@ -1,8 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+First, run the development json-server:
 
-First, run the development server:
+```bash
+npm i -g json-server
+
+json-server --watch db.json --port 3004
+
+```
+Open [http://localhost:3004](http://localhost:3004) with your browser to see the api.
+
+
+Second, run the development server:
 
 ```bash
 npm run dev
