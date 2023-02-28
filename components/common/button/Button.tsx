@@ -6,7 +6,7 @@ export interface ButtonProps {
     type?: ButtonHTMLAttributes<HTMLInputElement>["type"];
     disabled?: boolean;
     loading?: boolean;
-    className?: CSSProperties;
+    className?: string;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     icon?: string;
     iconPosition?: "left" | "right";

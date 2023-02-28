@@ -17,14 +17,15 @@ const AnswerCard: React.FC<Props> = ({answer, question, onUpdateAnswer}) => {
     const router = useRouter();
 
     const onLike = () => {
-        const [likedItem] = question?.answers?.filter(
+        const likedItem = question?.answers?.filter(
             el => el.id === answer?.id
-        );
-        const otherItem = question?.answers?.filter(el => el.id !== answer?.id);
+        )?.[0];
+        const otherItem =
+            question?.answers?.filter(el => el.id !== answer?.id) || [];
         const data = {
             ...question,
             answers: [
-                {...likedItem, likeCount: likedItem?.likeCount + 1},
+                {...likedItem, likeCount: likedItem?.likeCount || 0 + 1},
                 ...otherItem,
             ],
         };
@@ -34,14 +35,18 @@ const AnswerCard: React.FC<Props> = ({answer, question, onUpdateAnswer}) => {
         });
     };
     const onDislike = () => {
-        const [disLikedItem] = question?.answers?.filter(
+        const disLikedItem = question?.answers?.filter(
             el => el.id === answer?.id
-        );
-        const otherItem = question?.answers?.filter(el => el.id !== answer?.id);
+        )?.[0];
+        const otherItem =
+            question?.answers?.filter(el => el.id !== answer?.id) || [];
         const data = {
             ...question,
             answers: [
-                {...disLikedItem, dislikeCount: disLikedItem?.dislikeCount + 1},
+                {
+                    ...disLikedItem,
+                    dislikeCount: disLikedItem?.dislikeCount || 0 + 1,
+                },
                 ...otherItem,
             ],
         };
