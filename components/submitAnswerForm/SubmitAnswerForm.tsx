@@ -51,7 +51,7 @@ const SubmitAnswerForm: React.FC<Props> = ({onUpdateAnswer, question}) => {
             });
     };
     const [description, setDescription] = useState<string>("");
-    const onChangeDescription = value => {
+    const onChangeDescription = (value: string) => {
         setDescription(value);
     };
     return (
