@@ -1,4 +1,4 @@
- const generalMessages={
+ const generalText={
 time:"ساعت: ",
 date:"تاریخ: ",
 questionList:"لیست سوالات",
@@ -22,4 +22,4 @@ subject:"موضوع"
 
 
 }
-export default generalMessages
+export default generalText
