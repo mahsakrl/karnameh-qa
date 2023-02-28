@@ -17,9 +17,7 @@ giveup:"انصراف",
 answers:"پاسخ‌ها",
 noAnswer:"هیچ پاسخی تاکنون ثبت نشده",
 questionText:"متن سوال",
-subject:"موضوع"
-
-
-
+subject:"موضوع",
+title:"کارنامه: دستیار خرید"
 }
 export default generalText
