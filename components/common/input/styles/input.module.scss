@@ -1,0 +1,21 @@
+@import "styles/colors.scss";
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    .input {
+        all: unset;
+        background: $naturals-white;
+        height: 2.75rem;
+        box-sizing: border-box;
+        padding: 0.75rem 1rem;
+        border: 1px solid $color-silver;
+        border-radius: 0.375rem;
+    }
+    .label {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.75rem;
+        color: $gray-darker;
+    }
+}
