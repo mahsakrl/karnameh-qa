@@ -1,0 +1,63 @@
+@import "styles/colors";
+
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: $gray-darker;
+
+    .textarea {
+        all: unset;
+        height: 15.625rem;
+        background: $naturals-white;
+        border: 1px solid $color-silver;
+        border-radius: 10px;
+        font-size: 0.875rem;
+        direction: rtl;
+        resize: none;
+        padding: 0.75rem 1rem;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: $naturals-black;
+        word-break: break-all;
+
+        &::placeholder {
+            color: $gray-default;
+            font-size: 0.875rem !important;
+            font-weight: 500;
+
+            @media screen and (max-width: 800px) {
+                font-size: 0.625rem;
+            }
+        }
+
+        &:focus {
+            border: 1px solid $color-silver !important;
+        }
+
+        &:focus-visible {
+            border: 1px solid $color-silver !important;
+            outline-color: $color-silver;
+        }
+
+        &.disabled {
+            background-color: $color-silver;
+        }
+
+        &.fluid {
+            width: 100%;
+        }
+    }
+    .error-text {
+        padding-right: 1.25rem;
+        color: $annotations-error;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+    }
+}
