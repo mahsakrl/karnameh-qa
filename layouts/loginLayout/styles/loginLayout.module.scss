@@ -1,0 +1,10 @@
+@import "styles/colors.scss";
+.layout {
+    background-color: $gray-background;
+    .children-layout {
+        padding: 2.5rem 3.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
