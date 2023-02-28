@@ -1,0 +1,21 @@
+@import "styles/colors.scss";
+
+.avatar-container {
+    .avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+
+        &.round {
+            width: 2.75rem;
+            height: 2.75rem;
+            border-radius: 50%;
+        }
+        &.square {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 8px;
+        }
+    }
+}
