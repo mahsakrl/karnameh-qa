@@ -17,7 +17,10 @@ const QuestionCard: React.FC<Props> = ({isShowDetail = false, question}) => {
         router.push(`details/${question.id}`);
     };
     return (
-        <div className={styles["card"]} onClick={onGotoDetails}>
+        <div
+            className={styles["card"]}
+            onClick={isShowDetail ? () => {} : onGotoDetails}
+        >
             <div className={styles["header"]}>
                 <div className={styles["info"]}>
                     <div>
