@@ -58,6 +58,7 @@ const TextArea: React.FC<TextAreaProps> = props => {
                 onFocus={onFocus}
                 onBlur={onBlur}
                 disabled={disabled}
+                dir="auto"
             ></textarea>
             {!!error && <div className={styles["error-text"]}>{error}</div>}
         </div>

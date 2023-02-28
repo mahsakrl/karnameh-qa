@@ -36,6 +36,7 @@ const Input: React.FC<Props> = ({
                 value={value}
                 className={styles["input"]}
                 autoComplete="off"
+                dir="auto"
                 {...props}
             />
              
