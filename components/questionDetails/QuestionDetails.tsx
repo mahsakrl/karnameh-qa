@@ -20,8 +20,9 @@ const QuestionDetails = () => {
     const dispatch = useDispatch();
     const {query} = router;
     const [question, setQuestion] = useState<Question>();
+
     useEffect(() => {
-        onGetQuestionById();
+        !!query?.id && onGetQuestionById();
     }, [query]);
     const onGetQuestionById = () => {
         dispatch({type: GET_QUESTION_BY_ID_REQUEST});
