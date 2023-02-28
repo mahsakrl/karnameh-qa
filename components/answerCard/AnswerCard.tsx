@@ -99,7 +99,9 @@ const AnswerCard: React.FC<Props> = ({answer, question, onUpdateAnswer}) => {
                     </div>
                 </div>
             </div>
-            <div className={styles["question"]}>{answer?.description}</div>
+            <div className={styles["question"]}>
+                <pre dir="auto">{answer?.description}</pre>
+            </div>
             <div className={styles["button"]}>
                 <Button
                     icon={HAPPY_FACE}

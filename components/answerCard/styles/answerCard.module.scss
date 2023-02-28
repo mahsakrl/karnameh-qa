@@ -72,12 +72,13 @@
     }
 
     .button {
-        position: absolute;
-        bottom: 1rem;
-        left: 1rem;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         gap: 0.75rem;
+        align-self: flex-end;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
         .happy {
             color: $annotations-success;
         }
