@@ -63,10 +63,12 @@ const QuestionDetails = () => {
                 {generalText.submitYourAnswer}
             </div>
 
-            <SubmitAnswerForm
-                onUpdateAnswer={onGetQuestionById}
-                question={question}
-            />
+            {question && (
+                <SubmitAnswerForm
+                    onUpdateAnswer={onGetQuestionById}
+                    question={question}
+                />
+            )}
         </LoginLayout>
     );
 };
